@@ -1,0 +1,220 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: department-service
+  name: department-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: department-service
+  template:
+    metadata:
+      labels:
+        app: department-service
+    spec:
+      containers:
+      - image: quay.io/asuksunt/department-service:1.0
+        name: department-service
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: employee-service
+  name: employee-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: employee-service
+  template:
+    metadata:
+      labels:
+        app: employee-service
+    spec:
+      containers:
+      - image: quay.io/asuksunt/employee-service:1.0
+        name: employee-service
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: organization-service
+  name: organization-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: organization-service
+  template:
+    metadata:
+      labels:
+        app: organization-service
+    spec:
+      containers:
+      - image: quay.io/asuksunt/organization-service:1.0
+        name: organization-service
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: employee-soap-service
+  name: employee-soap-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: employee-soap-service
+  template:
+    metadata:
+      labels:
+        app: employee-soap-service
+    spec:
+      containers:
+      - image: quay.io/asuksunt/employee-soap-service:1.0
+        name: employee-soap-service
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: organization
+  labels:
+    app: organization
+spec:
+  ports:
+    - name: 8080-tcp
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+  type: ClusterIP
+  selector:
+    app: organization-service
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: employee
+  labels:
+    app: employee
+spec:
+  ports:
+    - name: 8080-tcp
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+  type: ClusterIP
+  selector:
+    app: employee-service
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: department
+  labels:
+    app: department
+spec:
+  ports:
+    - name: 8080-tcp
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+  type: ClusterIP
+  selector:
+    app: department-service
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: employee-soap
+  labels:
+    app: employee-soap
+spec:
+  ports:
+    - name: 8080-tcp
+      protocol: TCP
+      port: 8080
+      targetPort: 8080
+  type: ClusterIP
+  selector:
+    app: employee-soap-service
+---
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: department-service
+  labels:
+    app: department-service
+spec:
+  to:
+    kind: Service
+    name: department
+  port:
+    targetPort: 8080
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
+---
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: employee-service
+  labels:
+    app: employee-service
+spec:
+  to:
+    kind: Service
+    name: employee
+  port:
+    targetPort: 8080
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
+---
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: organization-service
+  labels:
+    app: organization-service
+spec:
+  to:
+    kind: Service
+    name: organization
+  port:
+    targetPort: 8080
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
+---
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: employee-soap-service
+  labels:
+    app: employee-soap-service
+spec:
+  to:
+    kind: Service
+    name: employee-soap
+  port:
+    targetPort: 8080
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect

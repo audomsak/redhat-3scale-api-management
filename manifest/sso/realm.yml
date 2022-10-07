@@ -1,0 +1,15 @@
+kind: KeycloakRealm
+apiVersion: keycloak.org/v1alpha1
+metadata:
+  name: example-realm
+  labels:
+    realm: example
+spec:
+  realm:
+    id: example
+    realm: example
+    enabled: true
+    displayName: example
+  instanceSelector:
+    matchLabels:
+      app: sso

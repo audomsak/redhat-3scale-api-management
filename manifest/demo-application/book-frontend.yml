@@ -1,0 +1,59 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: books-frontend-v2
+spec:
+  selector:
+    matchLabels:
+      app: books-frontend
+      version: v2
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: books-frontend
+        version: v2
+    spec:
+      containers:
+        - name: books-frontend
+          image: quay.io/redhattraining/3scale-books-frontend:v2
+          ports:
+            - containerPort: 3000
+          envFrom:
+            - configMapRef:
+                name: book-config
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: books-frontend
+spec:
+  selector:
+    app: books-frontend
+    version: v2
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
+---
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: books-frontend
+spec:
+  port:
+    targetPort: 3000
+  to:
+    name: books-frontend
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: book-config
+data:
+  REACT_APP_CLIENT_ID: UPDATE_ME
+  REACT_APP_BASE_URL: secured-library-3scale-apicast-staging.apps.cluster-6tq2j.6tq2j.sandbox674.opentlc.com
+  REACT_APP_KEYCLOAK_URL: https://keycloak-sso.apps.cluster-6tq2j.6tq2j.sandbox674.opentlc.com/auth
+  REACT_APP_ENDPOINT: /books
+  REACT_APP_KEYCLOAK_REALM: example

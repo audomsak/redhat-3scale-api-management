@@ -1,0 +1,24 @@
+kind: KeycloakUser
+apiVersion: keycloak.org/v1alpha1
+metadata:
+  name: example-user
+  labels:
+    app: sso
+spec:
+  user:
+    username: example
+    firstName: John
+    lastName: Doe
+    email: john@example.com
+    enabled: true
+    emailVerified: true
+    realmRoles:
+      - offline_access
+      - uma_authorization
+      - default-roles-example
+    credentials:
+    - type: password
+      value: redhat
+  realmSelector:
+    matchLabels:
+      realm: example
