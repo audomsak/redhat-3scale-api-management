@@ -19,9 +19,11 @@ Red Hat 3Scale API Management on OpenShift Container Platform demonstration prep
 3. Clone this repository to your computer. Change directory to the [script](/script/) directory then run the [setup.sh](script/setup.sh) script to install 3Scale and SSO operators, 3Scale API Manager instance, and SSO (Keycloak) instance.
 
    The script will ask for OpenShift cluster domain, AWS credential, and AWS S3 bucket information. Enter your cluster domain and AWS input like a screenshot below.
+
    ![setup operator](images/operator-setup-1.png)
 
 4. **The installation process will take for a while to get completed**. At the end, the script will show you 3Scale and SSO web console URLs as well as credentials for login.
+
    ![setup operator](images/operator-setup-2.png)
 
 ## 3Scale Architecture
