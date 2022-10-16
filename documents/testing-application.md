@@ -80,9 +80,9 @@ There is also a [Postman Environment file](../postman/default.postman_environmen
 
 ### Testing APIs
 
-1. Select **Collection** panel.
+1. Select **Collections** panel.
 2. Open the request you need to test.
-3. Make sure you've select the **Default** environment.
+3. Make sure you've select the **Default** environment (should be done only once).
 4. Click **Send** button to send request to server.
 
    ![import postman environment](../images/testing-service-16.png)
