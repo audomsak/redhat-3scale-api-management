@@ -1,31 +1,31 @@
-# Red Hat 3Scale API Management on OpenShift Demo
+# Red Hat 3scale API Management on OpenShift Demo
 
-Red Hat 3Scale API Management on OpenShift Container Platform demonstration preparation and guide.
+Red Hat 3scale API Management on OpenShift Container Platform demonstration preparation and guide.
 
 ## Table of Contents
 
 - [Installation Guide](/documents/installation.md)
-- [3Scale Architecture](#3scale-architecture)
-  - [3Scale high level overview](#3scale-high-level-overview)
-  - [3Scale basic architecture](#3scale-basic-architecture)
-  - [3Scale basic resources](#3scale-basic-resources)
+- [3scale Architecture](#3scale-architecture)
+  - [3scale high level overview](#3scale-high-level-overview)
+  - [3scale basic architecture](#3scale-basic-architecture)
+  - [3scale basic resources](#3scale-basic-resources)
 - [Demo Cluster Overview](#demo-cluster-overview)
 - [Demo Applications](#demo-applications)
 - [Testing Demo Applications](#testing-demo-applications)
 - [Working With 3Scale API Management](#working-with-3scale-api-management)
 - [Multi-Environments Management Guideline](#multi-environments-management-guideline)
 
-## 3Scale Architecture
+## 3scale Architecture
 
-### 3Scale high level overview
+### 3scale high level overview
 
 ![3scale overview](images/3scale-overview.png)
 
-### 3Scale basic architecture
+### 3scale basic architecture
 
 ![3scale architecture](images/3scale-architecture.png)
 
-### 3Scale basic resources
+### 3scale basic resources
 
 - **Backend** - represents a deployed backend application or service by pointing to its root URL.
 
