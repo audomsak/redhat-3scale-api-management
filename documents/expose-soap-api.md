@@ -105,4 +105,4 @@ Click on **Integration -> Configuration** menu from left panel. Then click **Pro
 
    ![expose rest api](../images/expose-rest-api-40.png)
 
-4. [Test the APIs.](testing-application.md#testing-apis)
+4. [Test the APIs](testing-application.md#testing-apis) using [3Scale API Testing (API Key Auth)](../postman/3scale-api-testing-api-key-auth.postman_collection.json) collection.
