@@ -42,3 +42,6 @@
 3. A dialog will be shown. Click **Show Access Key** to view your Access Key ID and Secret Access Key. Note these values or download them by click on **Download Key File** button.
 
    ![credential setup](../images/aws-credential-setup-3.png)
+
+---
+[Go back to installation guide page](aws-s3-setup.md)

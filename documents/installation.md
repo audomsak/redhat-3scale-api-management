@@ -13,7 +13,7 @@
 
 2. Open a terminal and login to OpenShift cluster with cluster admin privilege user i.e. `opentlc-mgr` (if you provisioned the cluster from RHPDS).
 
-3. First, clone this repository to your computer, then change directory to the [script](/script/) directory, and then run the [setup.sh](script/setup.sh) script to install and setup 3Scale and SSO operators, 3Scale API Manager instance, and SSO (Keycloak) instance.
+3. First, clone this repository to your computer, then change directory to the [script](/script/) directory, and then run the [setup.sh](../script/setup.sh) script to install and setup 3Scale and SSO operators, 3Scale API Manager instance, and SSO (Keycloak) instance.
 
    The script will ask for OpenShift cluster domain, AWS credential, and AWS S3 bucket information. Enter your cluster domain and AWS input like a screenshot below.
 
