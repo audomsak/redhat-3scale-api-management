@@ -44,4 +44,4 @@
    ![credential setup](../images/aws-credential-setup-3.png)
 
 ---
-[Go back to installation guide page](aws-s3-setup.md)
+[Go back to installation guide page](installation.md)
