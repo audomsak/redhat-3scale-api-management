@@ -1,6 +1,11 @@
-# Secure API with API Key-pair
+# Secure API with API Key-pair <!-- omit in toc -->
 
-## Table of Content
+## Table of Content <!-- omit in toc -->
+
+- [1. Configure Authentication Method for API Product](#1-configure-authentication-method-for-api-product)
+- [2. Generate Key for Application](#2-generate-key-for-application)
+- [3. Promote Changes to APIcasts (API Gateways)](#3-promote-changes-to-apicasts-api-gateways)
+- [4. Testing](#4-testing)
 
 ## 1. Configure Authentication Method for API Product
 
