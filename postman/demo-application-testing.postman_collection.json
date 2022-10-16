@@ -1,0 +1,103 @@
+{
+	"info": {
+		"_postman_id": "8f84c5fc-d9ff-43fc-9246-bd623c24714a",
+		"name": "Demo Application Testing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2703883"
+	},
+	"item": [
+		{
+			"name": "Get Employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://employee-service-demo.{{cluster-domain}}/employees",
+					"protocol": "https",
+					"host": [
+						"employee-service-demo",
+						"{{cluster-domain}}"
+					],
+					"path": [
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Department",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://department-service-demo.{{cluster-domain}}/departments",
+					"protocol": "https",
+					"host": [
+						"department-service-demo",
+						"{{cluster-domain}}"
+					],
+					"path": [
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Organization",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://organization-service-demo.{{cluster-domain}}/organizations",
+					"protocol": "https",
+					"host": [
+						"organization-service-demo",
+						"{{cluster-domain}}"
+					],
+					"path": [
+						"organizations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employee By ID (SOAP)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "SOAPAction",
+						"value": "http://www.jpworks.com/employee/GetEmployeeById",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:emp=\"http://www.jpworks.com/employee\">\n   <soapenv:Header/>\n   <soapenv:Body>\n      <emp:EmployeeByIdRequest id=\"1\"/>\n   </soapenv:Body>\n</soapenv:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://employee-soap-service-demo.{{cluster-domain}}/soap/service/employee",
+					"protocol": "https",
+					"host": [
+						"employee-soap-service-demo",
+						"{{cluster-domain}}"
+					],
+					"path": [
+						"soap",
+						"service",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

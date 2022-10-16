@@ -2,29 +2,18 @@
 
 Red Hat 3Scale API Management on OpenShift Container Platform demonstration preparation and guide.
 
-## Requirements
+## Table of Contents
 
-- Red Hat OpenShift Container Platform 4.10
-- AWS Web Services account ([Create AWS Free Tier account](https://aws.amazon.com/free))
-- [Postman](https://www.postman.com/downloads/)
-- OpenShift CLI (oc)
-- [OpenSSL](https://www.openssl.org/source/) binary (should already exists on Mac and Linux)
-
-## Installation Steps
-
-1. [Setup AWS S3 bucket and create access key](documents/aws-s3-setup.md)
-
-2. Open a terminal and login to OpenShift cluster with cluster admin privilege user i.e. `opentlc-mgr` (if you provisioned the cluster from RHPDS).
-
-3. Clone this repository to your computer. Change directory to the [script](/script/) directory then run the [setup.sh](script/setup.sh) script to install 3Scale and SSO operators, 3Scale API Manager instance, and SSO (Keycloak) instance.
-
-   The script will ask for OpenShift cluster domain, AWS credential, and AWS S3 bucket information. Enter your cluster domain and AWS input like a screenshot below.
-
-   ![setup operator](images/operator-setup-1.png)
-
-4. **The installation process will take for a while to get completed**. At the end, the script will show you 3Scale and SSO web console URLs as well as credentials for login.
-
-   ![setup operator](images/operator-setup-2.png)
+- [Installation Guide](/documents/installation.md)
+- [3Scale Architecture](#3scale-architecture)
+  - [3Scale high level overview](#3scale-high-level-overview)
+  - [3Scale basic architecture](#3scale-basic-architecture)
+  - [3Scale basic resources](#3scale-basic-resources)
+- [Demo Cluster Overview](#demo-cluster-overview)
+- [Demo Applications](#demo-applications)
+- [Testing Demo Applications](#testing-demo-applications)
+- [Working With 3Scale API Management](#working-with-3scale-api-management)
+- [Multi-Environments Management Guideline](#multi-environments-management-guideline)
 
 ## 3Scale Architecture
 
@@ -52,7 +41,11 @@ Red Hat 3Scale API Management on OpenShift Container Platform demonstration prep
 
 ![3scale resources](images/3scale-resources.png)
 
-## Demo applications
+## Demo Cluster Overview
+
+Once you've done all [installation steps](/documents/installation.md) above, the overview of OpenShift cluster will be like this.
+
+## Demo Applications
 
 The applictions used for demo are forked from projects created by the clever people out there. All credits are given to the project owners.
 
@@ -60,12 +53,19 @@ The applictions used for demo are forked from projects created by the clever peo
 
 - [Sample SOAP Spring Boot microservice](https://github.com/audomsak/ws-employee-soapcxf)
 
-## Demo cluster
+## Testing Demo Applications
 
-## Working with 3Scale API Management
+Follow this [guide](documents/testing-application.md) for how to test the demo applications.
 
-1. Expose REST API via API Gateway
-2. Expose SOAP API via API Gateway
-3. Limit API call with Rate Limit feature
-4. Secure API with API Key and API Key-pair
+## Working With 3Scale API Management
+
+1. [Onboarding new API consumer](documents/onboarding-new-api-consumer.md)
+2. [Expose SOAP API through API Gateway](documents/expose-soap-api.md)
+3. Secure API with API Key-pair
+4. Limit API call with Rate Limit feature
 5. Secure API with OAuth2 using Red Hat SSO
+6. Self-managed (Off-cluster) API Gateway
+
+## Multi-Environments Management Guideline
+
+TODO

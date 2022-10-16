@@ -1,10 +1,9 @@
-# AWS S3 Bucket Setup Guide
+# AWS S3 Bucket Setup Guide <!-- omit in toc -->
 
-Table of contents.
+## Table of Contents <!-- omit in toc -->
 
-- [AWS S3 Bucket Setup Guide](#aws-s3-bucket-setup-guide)
-  - [Create S3 Bucket](#create-s3-bucket)
-  - [Create Access Key](#create-access-key)
+- [Create S3 Bucket](#create-s3-bucket)
+- [Create Access Key](#create-access-key)
 
 ## Create S3 Bucket
 
