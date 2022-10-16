@@ -92,3 +92,17 @@ Click on **Integration -> Configuration** menu from left panel. Then click **Pro
    ![expose soap api](../images/expose-soap-api-15.png)
 
 ## 5. Testing
+
+1. Click on **Applications -> Listing** menu from left panel. Then click **Test Corp HR Mobile** link to open Application dashboard.
+
+   ![expose rest api](../images/expose-rest-api-38.png)
+
+2. Copy User Key.
+
+   ![expose rest api](../images/expose-rest-api-39.png)
+
+3. Open Postman then update `user-key` variable and click **Save** button.
+
+   ![expose rest api](../images/expose-rest-api-40.png)
+
+4. [Test the APIs.](testing-application.md#testing-apis)

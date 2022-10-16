@@ -61,7 +61,7 @@ Follow this [guide](documents/testing-application.md) for how to test the demo a
 
 1. [Onboarding new API consumer](documents/onboarding-new-api-consumer.md)
 2. [Expose SOAP API through API Gateway](documents/expose-soap-api.md)
-3. Secure API with API Key-pair
+3. [Secure API with API Key-pair](documents/secure-with-api-key-pair.md)
 4. Limit API call with Rate Limit feature
 5. Secure API with OAuth2 using Red Hat SSO
 6. Self-managed (Off-cluster) API Gateway

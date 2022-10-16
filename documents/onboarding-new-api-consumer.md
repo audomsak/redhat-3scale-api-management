@@ -226,3 +226,17 @@ Once we've configured everything in place in API Manager, we have to promote all
    ![expose rest api](../images/expose-rest-api-30.png)
 
 ## 10. Testing
+
+1. Click on **Applications -> Listing** menu from left panel. Then click **Test Corp HR Mobile** link to open Application dashboard.
+
+   ![expose rest api](../images/expose-rest-api-38.png)
+
+2. Copy User Key.
+
+   ![expose rest api](../images/expose-rest-api-39.png)
+
+3. Open Postman then update `user-key` variable and click **Save** button.
+
+   ![expose rest api](../images/expose-rest-api-40.png)
+
+4. [Test the APIs](testing-application.md#testing-apis) using [3Scale API Testing (API Key Auth)](../postman/3scale-api-testing-api-key-auth.postman_collection.json) collection.

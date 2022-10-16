@@ -1,24 +1,31 @@
 {
 	"info": {
-		"_postman_id": "8f84c5fc-d9ff-43fc-9246-bd623c24714a",
-		"name": "Demo Application Testing",
+		"_postman_id": "e5ae2d63-da5d-49c0-b4fd-ab997992088b",
+		"name": "3Scale API Testing (API Key Auth)",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "2703883"
 	},
 	"item": [
 		{
-			"name": "Get Employee",
+			"name": "Get Employees",
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "user_key",
+						"value": "{{user-key}}",
+						"type": "text"
+					}
+				],
 				"url": {
-					"raw": "https://employee-service-demo.{{cluster-domain}}/employees",
+					"raw": "https://human-resource-services-3scale-apicast-staging.{{cluster-domain}}/employee/employees",
 					"protocol": "https",
 					"host": [
-						"employee-service-demo",
+						"human-resource-services-3scale-apicast-staging",
 						"{{cluster-domain}}"
 					],
 					"path": [
+						"employee",
 						"employees"
 					]
 				}
@@ -29,15 +36,22 @@
 			"name": "Get Department",
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "user_key",
+						"value": "{{user-key}}",
+						"type": "text"
+					}
+				],
 				"url": {
-					"raw": "https://department-service-demo.{{cluster-domain}}/departments",
+					"raw": "https://human-resource-services-3scale-apicast-staging.{{cluster-domain}}/department/departments",
 					"protocol": "https",
 					"host": [
-						"department-service-demo",
+						"human-resource-services-3scale-apicast-staging",
 						"{{cluster-domain}}"
 					],
 					"path": [
+						"department",
 						"departments"
 					]
 				}
@@ -48,15 +62,22 @@
 			"name": "Get Organization",
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "user_key",
+						"value": "{{user-key}}",
+						"type": "text"
+					}
+				],
 				"url": {
-					"raw": "https://organization-service-demo.{{cluster-domain}}/organizations",
+					"raw": "https://human-resource-services-3scale-apicast-staging.{{cluster-domain}}/organization/organizations",
 					"protocol": "https",
 					"host": [
-						"organization-service-demo",
+						"human-resource-services-3scale-apicast-staging",
 						"{{cluster-domain}}"
 					],
 					"path": [
+						"organization",
 						"organizations"
 					]
 				}
@@ -64,10 +85,15 @@
 			"response": []
 		},
 		{
-			"name": "Get Employee By ID (SOAP)",
+			"name": "Get Employees By ID (SOAP)",
 			"request": {
 				"method": "POST",
 				"header": [
+					{
+						"key": "user_key",
+						"value": "{{user-key}}",
+						"type": "text"
+					},
 					{
 						"key": "SOAPAction",
 						"value": "http://www.jpworks.com/employee/GetEmployeeById",
@@ -84,20 +110,25 @@
 					}
 				},
 				"url": {
-					"raw": "https://employee-soap-service-demo.{{cluster-domain}}/soap/service/employee",
+					"raw": "https://human-resource-services-3scale-apicast-staging.{{cluster-domain}}/soap/employee",
 					"protocol": "https",
 					"host": [
-						"employee-soap-service-demo",
+						"human-resource-services-3scale-apicast-staging",
 						"{{cluster-domain}}"
 					],
 					"path": [
 						"soap",
-						"service",
 						"employee"
 					]
 				}
 			},
 			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "user-key",
+			"value": "bc3da65cfb24c0846fefcb6fd20d4aa2"
 		}
 	]
 }
