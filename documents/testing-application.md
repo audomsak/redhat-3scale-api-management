@@ -2,7 +2,7 @@
 
 There are 4 microservices deployed in the cluster by the [setup.sh](../script/setup.sh) script. Three of them expose a few REST APIs and another one exposes SOAP APIs.
 
-Those services that expose REST APIs come with Swagger UI which you can use to test the APIs in each service. However, you can also use Postman to both of REST APIs and SOAP APIs as well.
+Those services that expose REST APIs come with Swagger UI to which you can use testing the APIs in each service. However, you can also use Postman to test both of REST APIs and SOAP APIs as well.
 
 ## Postman Collection and Environment <!-- omit in toc -->
 
