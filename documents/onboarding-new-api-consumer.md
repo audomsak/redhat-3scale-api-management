@@ -26,7 +26,7 @@
 
    ![expose rest api](../images/expose-rest-api-1.png)
 
-3. Open 3scale API Management admin web console using the URL and credential provided at the end of in the [installation process](../README.md#installation-steps). Then from the main dashboard, click on **Create Backend** button.
+3. Open 3scale API Management admin web console using the URL and credential provided at the end of the [installation process](../README.md#installation-steps). Then from the main dashboard, click on **Create Backend** button.
 
    ![expose rest api](../images/expose-rest-api-3.png)
 
