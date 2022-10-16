@@ -4,7 +4,20 @@ There are 4 microservices deployed in the cluster by the [setup.sh](../script/se
 
 Those services that expose REST APIs come with Swagger UI to which you can use testing the APIs in each service. However, you can also use Postman to test both of REST APIs and SOAP APIs as well.
 
-## Postman Collection and Environment <!-- omit in toc -->
+## Table of Contents <!-- omit in toc -->
+
+- [Requirements](#requirements)
+- [Postman Collection and Environment](#postman-collection-and-environment)
+- [Testing REST APIs via Swagger UI](#testing-rest-apis-via-swagger-ui)
+- [Testing REST and SOAP APIs with Postman](#testing-rest-and-soap-apis-with-postman)
+  - [Import Postman Collections and Environments](#import-postman-collections-and-environments)
+  - [Testing APIs](#testing-apis)
+
+## Requirements
+
+- [Postman](https://www.postman.com/downloads/)
+
+## Postman Collection and Environment
 
 There are 4 Postman collections you can use for API testing:
 
@@ -14,17 +27,6 @@ There are 4 Postman collections you can use for API testing:
 4. 3Scale API Testing (OAuth)  - Used for testing the APIs exposed through API Gateway using OAuth2 authentication.
 
 There is also a [Postman Environment file](../postman/default.postman_environment.json) contains all environment vairables used by the collections. The enviroment variables are used to store values e.g. cluster domain, credentials etc.
-
-## Requirements <!-- omit in toc -->
-
-- [Postman](https://www.postman.com/downloads/)
-
-## Table of Contents <!-- omit in toc -->
-
-- [Testing REST APIs via Swagger UI](#testing-rest-apis-via-swagger-ui)
-- [Testing REST and SOAP APIs with Postman](#testing-rest-and-soap-apis-with-postman)
-  - [Import Postman Collections and Environments](#import-postman-collections-and-environments)
-  - [Testing APIs](#testing-apis)
 
 ## Testing REST APIs via Swagger UI
 
