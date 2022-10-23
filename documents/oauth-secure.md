@@ -144,6 +144,6 @@ Due to the authentication mode for API product has been changed to OpenID Connec
 
    ![oauth secure](../images/oauth-13.png)
 
-2. [Test the API secured with OAuth](testing-application.md#testing-api-secured-by-oauth) using [3Scale API Testing (OAuth)](../postman/3scale-api-testing-oauth.postman_collection.json) collection.
+2. [Test the API secured with OAuth](testing-application.md#testing-api-secured-with-oauth) using [3Scale API Testing (OAuth)](../postman/3scale-api-testing-oauth.postman_collection.json) collection.
 
 ---
