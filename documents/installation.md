@@ -38,5 +38,31 @@
 
 5. Setup Zync client in Keycloak so it can call Keycloak APIs.
 
+   1. Login to Red Hat SSO web console using the URL and credential from step 4 above.
+
+   2. Click **Clients** menu from left panel.
+
+      ![sso config](../images/sso-config-1.png)
+
+   3. Click **Create** button.
+
+      ![sso config](../images/sso-config-2.png)
+
+   4. Click **Select file** button. Browse to [zync-client.json](../manifest/sso/zync-client.json) file.
+
+      ![sso config](../images/sso-config-3.png)
+
+   5. Click **Save** button.
+
+      ![sso config](../images/sso-config-4.png)
+
+   6. Go to **Service Account Roles** tab. In the **Client Roles** section, select **Realm Management**. Click **manage clients**, then click **Add selected** button.
+
+      ![sso config](../images/sso-config-5.png)
+
+   7. Go to **Credentials** tab. Look for **Secret** value, you will need this when setting up OAuth authentication in 3scale.
+
+      ![sso config](../images/sso-config-6.png)
+
 ---
 [Go back to main page](../README.md)
