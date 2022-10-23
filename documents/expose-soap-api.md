@@ -2,13 +2,13 @@
 
 ## Steps <!-- omit in toc -->
 
-- [1. Create backend API](#1-create-backend-api)
-- [2. Add backend to Product](#2-add-backend-to-product)
+- [1. Create Backend API](#1-create-backend-api)
+- [2. Add Backend to Product](#2-add-backend-to-product)
 - [3. Configure Mapping Rules](#3-configure-mapping-rules)
 - [4. Promote Changes to APIcasts (API Gateways)](#4-promote-changes-to-apicasts-api-gateways)
 - [5. Testing](#5-testing)
 
-## 1. Create backend API
+## 1. Create Backend API
 
 1. Go to OpenShift web console, make sure you're in **Administrator** perspective, change Project to **demo**, then go to **Networking -> Services** menu, and then click on the service you need to expose it's API(s) through API gateway.
 
@@ -37,7 +37,7 @@
 
    ![expose soap api](../images/expose-soap-api-5.png)
 
-## 2. Add backend to Product
+## 2. Add Backend to Product
 
 1. Click on dropdown list menu then select **Product**.
 

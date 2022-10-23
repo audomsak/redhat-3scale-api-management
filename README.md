@@ -61,7 +61,7 @@ Follow this [guide](documents/testing-application.md) for how to test the demo a
 1. [Onboarding new API consumer](documents/onboarding-new-api-consumer.md)
 2. [Expose legacy (SOAP) API to outside world](documents/expose-soap-api.md)
 3. [More secure and flexible with API Key-pair](documents/secure-with-api-key-pair.md)
-4. Limit API call with Rate Limit feature
+4. Limit API call using Rate Limit
 5. Secure your API with OAuth2 standard
 6. Self-managed (Off-cluster) API Gateway
 

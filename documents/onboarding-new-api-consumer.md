@@ -2,9 +2,9 @@
 
 ## Steps <!-- omit in toc -->
 
-- [1. Create backend API](#1-create-backend-api)
-- [2. Create an account for API consumer](#2-create-an-account-for-api-consumer)
-- [3. Create a new API product](#3-create-a-new-api-product)
+- [1. Create Backend API](#1-create-backend-api)
+- [2. Create an Account for API Consumer](#2-create-an-account-for-api-consumer)
+- [3. Create API Product](#3-create-api-product)
 - [4. Create Application Plan](#4-create-application-plan)
 - [5. Create Application](#5-create-application)
 - [6. Configure Backend API for Product](#6-configure-backend-api-for-product)
@@ -13,7 +13,7 @@
 - [9. Promote Changes to APIcasts (API Gateways)](#9-promote-changes-to-apicasts-api-gateways)
 - [10. Testing](#10-testing)
 
-## 1. Create backend API
+## 1. Create Backend API
 
 1. Go to OpenShift web console, make sure you're in **Administrator** perspective, change Project to **demo**, then go to **Networking -> Services** menu, and then click on the service you need to expose it's API(s) through API gateway.
 
@@ -47,7 +47,7 @@
 
    ![expose rest api](../images/expose-rest-api-12.png)
 
-## 2. Create an account for API consumer
+## 2. Create an Account for API Consumer
 
 1. Click on dropdown list menu then select **Audience**.
 
@@ -84,7 +84,7 @@
 
    ![expose rest api](../images/expose-rest-api-33.png)
 
-## 3. Create a new API product
+## 3. Create API Product
 
 1. Click on dropdown list menu then select **Product**.
 
