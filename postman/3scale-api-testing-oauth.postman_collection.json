@@ -1,0 +1,314 @@
+{
+	"info": {
+		"_postman_id": "2b5a44a3-1d8d-4d7a-83a4-50df64ea2b3f",
+		"name": "3Scale API Testing (OAuth)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2703883"
+	},
+	"item": [
+		{
+			"name": "Get Employees",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientId",
+							"value": "{{client-id}}",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "{{client-secret}}",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://keycloak-sso.{{cluster-domain}}/auth/realms/example/protocol/openid-connect/token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://keycloak-sso.{{cluster-domain}}/auth/realms/example/protocol/openid-connect/auth",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://human-resource-services-3scale-apicast-staging.{{cluster-domain}}/employee/employees",
+					"protocol": "https",
+					"host": [
+						"human-resource-services-3scale-apicast-staging",
+						"{{cluster-domain}}"
+					],
+					"path": [
+						"employee",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Departments",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientId",
+							"value": "{{client-id}}",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "{{client-secret}}",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://keycloak-sso.{{cluster-domain}}/auth/realms/example/protocol/openid-connect/token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://keycloak-sso.{{cluster-domain}}/auth/realms/example/protocol/openid-connect/auth",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://human-resource-services-3scale-apicast-staging.{{cluster-domain}}/department/departments",
+					"protocol": "https",
+					"host": [
+						"human-resource-services-3scale-apicast-staging",
+						"{{cluster-domain}}"
+					],
+					"path": [
+						"department",
+						"departments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Organizations",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "clientId",
+							"value": "{{client-id}}",
+							"type": "string"
+						},
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "{{client-secret}}",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://keycloak-sso.{{cluster-domain}}/auth/realms/example/protocol/openid-connect/token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://keycloak-sso.{{cluster-domain}}/auth/realms/example/protocol/openid-connect/auth",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://human-resource-services-3scale-apicast-staging.{{cluster-domain}}/organization/organizations",
+					"protocol": "https",
+					"host": [
+						"human-resource-services-3scale-apicast-staging",
+						"{{cluster-domain}}"
+					],
+					"path": [
+						"organization",
+						"organizations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Employee By ID (SOAP)",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "grant_type",
+							"value": "client_credentials",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "{{client-id}}",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "{{client-secret}}",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://keycloak-sso.{{cluster-domain}}/auth/realms/example/protocol/openid-connect/token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://keycloak-sso.{{cluster-domain}}/auth/realms/example/protocol/openid-connect/auth",
+							"type": "string"
+						},
+						{
+							"key": "client_authentication",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "SOAPAction",
+						"value": "http://www.jpworks.com/employee/GetEmployeeById",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:emp=\"http://www.jpworks.com/employee\">\n    <soapenv:Header/>\n    <soapenv:Body>\n        <emp:EmployeeByIdRequest id=\"1\"/>\n    </soapenv:Body>\n</soapenv:Envelope>",
+					"options": {
+						"raw": {
+							"language": "xml"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://human-resource-services-3scale-apicast-staging.{{cluster-domain}}/soap/employee",
+					"protocol": "https",
+					"host": [
+						"human-resource-services-3scale-apicast-staging",
+						"{{cluster-domain}}"
+					],
+					"path": [
+						"soap",
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get OpenID Configuration",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://keycloak-sso.{{cluster-domain}}/auth/realms/example/.well-known/openid-configuration",
+					"protocol": "https",
+					"host": [
+						"keycloak-sso",
+						"{{cluster-domain}}"
+					],
+					"path": [
+						"auth",
+						"realms",
+						"example",
+						".well-known",
+						"openid-configuration"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "user-key",
+			"value": "bc3da65cfb24c0846fefcb6fd20d4aa2"
+		}
+	]
+}

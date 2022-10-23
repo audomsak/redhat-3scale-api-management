@@ -11,7 +11,8 @@ Those services that expose REST APIs come with Swagger UI to which you can use t
 - [Testing REST APIs via Swagger UI](#testing-rest-apis-via-swagger-ui)
 - [Testing REST and SOAP APIs with Postman](#testing-rest-and-soap-apis-with-postman)
   - [Import Postman Collections and Environments](#import-postman-collections-and-environments)
-  - [Testing APIs](#testing-apis)
+  - [Testing API](#testing-api)
+  - [Testing API Secured With OAuth](#testing-api-secured-with-oauth)
 
 ## Requirements
 
@@ -78,7 +79,7 @@ There is also a [Postman Environment file](../postman/default.postman_environmen
 
    ![import postman environment](../images/testing-service-17.png)
 
-### Testing APIs
+### Testing API
 
 1. Select **Collections** panel.
 2. Open the request you need to test.
@@ -86,3 +87,25 @@ There is also a [Postman Environment file](../postman/default.postman_environmen
 4. Click **Send** button to send request to server.
 
    ![import postman environment](../images/testing-service-16.png)
+
+### Testing API Secured With OAuth
+
+1. Select **Collections** panel then open the request you need to test. Go to **Authorization** tab, scroll to bottom then click **Get New Access Token** button.
+
+   ![testing service](../images/testing-service-18.png)
+
+2. Postman will send request to Authentication Server (SSO, in this case) to get a token based on Client ID, Client Secret, and Realm configured in Postman Environments (variables). An access token should be returned from the server, then click **Proceed** button.
+
+   ![testing service](../images/testing-service-19.png)
+
+3. The Manage Access Tokens dialog will pop up with access token details. Click on **Use Token** button Postman will populate necessary HTTP headers.
+
+   ![testing service](../images/testing-service-20.png)
+
+4. Now you can submit a API request to server.
+
+   ![testing service](../images/testing-service-21.png)
+
+5. You can reuse the access token with other API requests as well. In the **Authorization** tab for the request you need to reuse the token, just select the available token. And note that you can also manage existing tokens as well.
+
+   ![testing service](../images/testing-service-22.png)

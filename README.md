@@ -62,7 +62,7 @@ Follow this [guide](documents/testing-application.md) for how to test the demo a
 2. [Expose legacy (SOAP) API to outside world](documents/expose-soap-api.md)
 3. [More secure and flexible with API Key-pair](documents/secure-with-api-key-pair.md)
 4. [Limit API calls using Rate Limit](documents/rate-limit.md)
-5. Secure your API with OAuth2 standard
+5. [Secure your API with OpenID Connect OAuth 2.0 standard](documents/oauth-secure.md)
 6. Self-managed (Off-cluster) API Gateway
 
 ## TODO
