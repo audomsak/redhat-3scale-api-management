@@ -25,7 +25,7 @@ There are 4 Postman collections you can use for API testing:
 1. [Demo Application Testing](../postman/demo-application-testing.postman_collection.json) - Used for testing the APIs exposed by microservices through the OpenShift Route directly.
 2. [3Scale API Testing (API Key Auth)](../postman/3scale-api-testing-api-key-auth.postman_collection.json) - Used for testing the APIs exposed through API Gateway using **API Key** as a credential for authentication.
 3. [3Scale API Testing (API Key Pair Auth)](../postman/3scale-api-testing-api-key-pair-auth.postman_collection.json)  - Used for testing the APIs exposed through API Gateway using **Application ID** and **Application Key** pair as a credential for authentication.
-4. 3Scale API Testing (OAuth)  - Used for testing the APIs exposed through API Gateway using OAuth2 authentication.
+4. [3Scale API Testing (OAuth)](../postman/3scale-api-testing-oauth.postman_collection.json)  - Used for testing the APIs exposed through API Gateway with OpenID Connect OAuth 2.0 authentication.
 
 There is also a [Postman Environment file](../postman/default.postman_environment.json) contains all environment vairables used by the collections. The enviroment variables are used to store values e.g. cluster domain, credentials etc.
 
