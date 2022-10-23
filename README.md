@@ -12,8 +12,7 @@ Red Hat 3scale API Management on OpenShift Container Platform demonstration prep
 - [Demo Cluster Overview](#demo-cluster-overview)
 - [Demo Applications](#demo-applications)
 - [Testing Demo Applications](#testing-demo-applications)
-- [Working With 3Scale API Management](#working-with-3scale-api-management)
-- [Multi-Environments Management Guideline](#multi-environments-management-guideline)
+- [Working With 3Scale API Management (Demo)](#working-with-3scale-api-management-demo)
 
 ## 3scale Architecture
 
@@ -57,15 +56,17 @@ The applictions used for demo are forked from projects created by the clever peo
 
 Follow this [guide](documents/testing-application.md) for how to test the demo applications.
 
-## Working With 3Scale API Management
+## Working With 3Scale API Management (Demo)
 
 1. [Onboarding new API consumer](documents/onboarding-new-api-consumer.md)
-2. [Expose SOAP API through API Gateway](documents/expose-soap-api.md)
-3. [Secure API with API Key-pair](documents/secure-with-api-key-pair.md)
+2. [Expose legacy (SOAP) API to outside world](documents/expose-soap-api.md)
+3. [More secure and flexible with API Key-pair](documents/secure-with-api-key-pair.md)
 4. Limit API call with Rate Limit feature
-5. Secure API with OAuth2 using Red Hat SSO
+5. Secure your API with OAuth2 standard
 6. Self-managed (Off-cluster) API Gateway
 
-## Multi-Environments Management Guideline
+## TODO
 
-TODO
+- Multi-Environments management guideline
+- API as Code CI/CD pipeline (Tekton + ArgoCD)
+- 3Scale setup using NFS server running in the same cluster

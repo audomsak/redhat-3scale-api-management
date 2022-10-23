@@ -116,6 +116,10 @@
 
    ![expose rest api](../images/expose-rest-api-17.png)
 
+4. Click on 3 dots menu then select **Publish** to publish application plan.
+
+   ![expose rest api](../images/expose-rest-api-41.png)
+
 ## 5. Create Application
 
 1. Click on **Application -> Listing** menu from left panel.
@@ -130,8 +134,8 @@
 
    - **Account:** `Test Corp`
    - **Application plan:** `Free`
-   - **Name:** `Test Corp HR Mobile'
-   - **Description:** `Test Corp HR Mobile Application'
+   - **Name:** `Test Corp HR Mobile`
+   - **Description:** `Test Corp HR Mobile Application`
 
    ![expose rest api](../images/expose-rest-api-20.png)
 
