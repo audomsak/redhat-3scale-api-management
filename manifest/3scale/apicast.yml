@@ -1,0 +1,12 @@
+apiVersion: apps.3scale.net/v1alpha1
+kind: APIcast
+metadata:
+  name: prod-gateway
+spec:
+  adminPortalCredentialsRef:
+    name: apicast-secret
+  deploymentEnvironment: production
+  exposedHost:
+    host: api-gateway.apps.OCP_DOMAIN
+    tls:
+    - {}

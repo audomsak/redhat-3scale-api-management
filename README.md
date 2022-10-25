@@ -64,7 +64,9 @@ Follow this [guide](documents/testing-application.md) for how to test the demo a
 3. [More secure and flexible with API Key-pair](documents/secure-with-api-key-pair.md)
 4. [Limit API calls using Rate Limit](documents/rate-limit.md)
 5. [Secure your API with OpenID Connect OAuth 2.0 standard](documents/oauth-secure.md)
-6. Self-managed (Off-cluster) API Gateway
+6. [Running Self-Managed API Gateway on OpenShift](documents/self-managed-gateway.md)
+7. [Running Self-Manage API Gateway on VM](documents/self-managed-gateway-vm.md)
+8. Access Control based on IP Address
 
 ## TODO
 
