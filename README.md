@@ -74,4 +74,4 @@ Follow this [guide](documents/testing-application.md) for how to test the demo a
 
 ## References
 
-- [DO240 - Cloud-native API Administration with Red Hat 3scale API Management](https://www.redhat.com/en/services/training/do240-cloud-native-api-admin-red-hat-3scale-api-management) course.
+- DO240 - Cloud-native API Administration with Red Hat 3scale API Management course. ([Public](https://www.redhat.com/en/services/training/do240-cloud-native-api-admin-red-hat-3scale-api-management), [Redhatter](https://role.rhu.redhat.com/rol-rhu/app/catalog?q=3scale))
