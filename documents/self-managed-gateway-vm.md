@@ -41,7 +41,13 @@
 
 1. Login to VM via SSH.
 
-2. Login to Red Hat Registry with your Red Hat account.
+2. Switch to **root** user with this command.
+
+    ```sh
+    sudo -i
+    ```
+
+3. Use **podman** to login to Red Hat Registry with your Red Hat account.
 
     ```sh
     podman docker login registry.redhat.io
@@ -50,7 +56,7 @@
     Login Succeeded!
     ```
 
-3. Run the [APIcast container](https://catalog.redhat.com/software/containers/3scale-amp2/apicast-gateway-rhel8/5df398c85a13466876712703) with this command. **DO NOT** forget to replace following vaiables:
+4. Run the [APIcast container](https://catalog.redhat.com/software/containers/3scale-amp2/apicast-gateway-rhel8/5df398c85a13466876712703) with this command. **DO NOT** forget to replace following vaiables:
    - **ACCESS_TOKEN:** the access token generated in 3scale [above](#1-generate-access-token-for-api-gateway-apicast).
    - **DOMAIN:** the OpenShift cluster domain i.e. `cluster-hrpdc.hrpdc.sandbox140.opentlc.com`. You can use `oc whoami --show-console|awk -F'apps.' '{print $2}'` command to get the domain value.
 
@@ -64,7 +70,7 @@
    registry.redhat.io/3scale-amp2/apicast-gateway-rhel8:3scale2.12
    ```
 
-4. Test if you can access APIcast. Replace `VM_HOSTNAME` with the actual VM hostname in the email after [VM provisioning](prepare-vm.md). Don't worry about HTTP 404 Not Found at the moment.
+5. Test if you can access APIcast. Replace `VM_HOSTNAME` with the actual VM hostname in the email after [VM provisioning](prepare-vm.md). Don't worry about HTTP 404 Not Found at the moment.
 
    ```sh
    curl -v http://<VM_HOSTNAME>
