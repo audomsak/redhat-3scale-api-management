@@ -12,7 +12,7 @@ Go to [ifconfig.me](https://ifconfig.me/) to check your IP Address.
 
 ![access control](../images/access-control-ip-1.png)
 
-Note. You can also use `curl https://ifconfig.me` command to get you host IP address.
+Note. You can also use `curl https://ifconfig.me` command to get your host IP address.
 
 ## 2. Add Policy to API Product
 
