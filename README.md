@@ -43,7 +43,7 @@ Red Hat 3scale API Management on OpenShift Container Platform demonstration prep
 
 ## Demo Cluster Overview
 
-Once you've done all [installation steps](/documents/installation.md) above, the overview of OpenShift cluster will be like this.
+Once you've done all [installation steps](/documents/installation.md), the overview of OpenShift cluster will be like this.
 
 ![demo cluster](images/demo-cluster.png)
 
