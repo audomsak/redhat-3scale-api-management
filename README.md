@@ -13,6 +13,7 @@ Red Hat 3scale API Management on OpenShift Container Platform demonstration prep
 - [Demo Applications](#demo-applications)
 - [Testing Demo Applications](#testing-demo-applications)
 - [Working With 3Scale API Management (Demo)](#working-with-3scale-api-management-demo)
+- [References](#references)
 
 ## 3scale Architecture
 
@@ -70,3 +71,7 @@ Follow this [guide](documents/testing-application.md) for how to test the demo a
 - Multi-Environments management guideline
 - API as Code CI/CD pipeline (Tekton + ArgoCD)
 - 3Scale setup using NFS server running in the same cluster
+
+## References
+
+- [DO240 - Cloud-native API Administration with Red Hat 3scale API Management](https://www.redhat.com/en/services/training/do240-cloud-native-api-admin-red-hat-3scale-api-management) course.
