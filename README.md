@@ -1,4 +1,4 @@
-# Red Hat 3scale API Management on OpenShift Demo
+# [Red Hat 3scale API Management](https://www.redhat.com/en/technologies/jboss-middleware/3scale) on OpenShift Demo
 
 Red Hat 3scale API Management on OpenShift Container Platform demonstration preparation and guide.
 
@@ -45,6 +45,8 @@ Red Hat 3scale API Management on OpenShift Container Platform demonstration prep
 
 Once you've done all [installation steps](/documents/installation.md) above, the overview of OpenShift cluster will be like this.
 
+![demo cluster](images/demo-cluster.png)
+
 ## Demo Applications
 
 The applictions used for demo are forked from projects created by the clever people out there. All credits are given to the project owners.
@@ -71,8 +73,8 @@ Follow this [guide](documents/testing-application.md) for how to test the demo a
 ## TODO
 
 - Multi-Environments management guideline
-- API as Code CI/CD pipeline (Tekton + ArgoCD)
-- 3Scale setup using NFS server running in the same cluster
+- API as Code, CI/CD pipeline (Tekton + ArgoCD)
+- 3scale setup using NFS server running in the same cluster
 
 ## References
 
