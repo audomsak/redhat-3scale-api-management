@@ -83,7 +83,7 @@ You have to setup Zync client in SSO (Keycloak) so 3scale can integrate with SSO
             - **SECRET:** **Zync-client** client secret get from **Step 7** in [Configure SSO](#1-configure-sso) step above.
             - **CLUSTER DOMAIN:** OpenShift cluster domain. (You can also run `oc whoami --show-console|awk -F'apps.' '{print $2}'` command in terminal to get cluster domain value)
 
-            For example, `https://zync-client:2IaLsOOTEZzTOBeTp5U8OfIeQiKYmNtI@keycloak-sso.apps.cluster-hrpdc.hrpdc.sandbox140.opentlc.com/auth/realms/example`
+            For example, `https://zync-client:2IaLsOOTEZzTOBeTp5U8OfIeQiKYmNtI@keycloak-sso.apps.cluster-hrpdc.hrpdc.sandbox140.opentlc.com/auth/realms/example` #gitleaks:allow
 
    - **OIDC AUTHORIZATION FLOW** section
 
